@@ -1,0 +1,111 @@
+@keyframes colorChangebody{
+ 
+    0%{
+        background-color: #AEC6CF;}
+    50%{
+        background-color: rgba(0, 0, 139, 0.582);
+    }
+    100%{
+        background-color: #AEC6CF;
+    }
+}
+    
+@keyframes colorChangebody2{
+   
+    0%{
+        background-color: #141414;
+    }
+    50%{
+        background-color: #333333;
+    }
+    100%{
+        background-color: #141414;
+    }
+}
+@keyframes colorChangeButton{
+ 
+    0%{
+        background-color: orange;
+    }
+    50%{
+        background-color: orangered;
+    }
+    100%{
+        background-color: orange;
+    }
+}
+    
+
+input{
+    color: white;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 17px;
+    background-color:#b9030f;
+    border: #b9030f solid 1px;
+}
+
+.content{
+    display: flex;
+    height: 100vw;
+    margin: auto;
+    background-color: rgba(55, 255, 162, 0.6);
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+}
+.salario-hora{
+    animation: colorChangebody 4.5s infinite;
+    height: 100vw;
+    margin: auto;
+    background-color: purple;
+    width: 100vw;
+    flex-direction: column;
+    display: flex;
+    align-items: center;   
+}
+.horas-trabalhadas-mes{
+    animation: colorChangebody2 4.5s infinite;
+    height: 100vw;
+    margin: auto;
+    background-color: rgba(55, 255, 162, 0.6);
+    width: 100vw;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+   
+    
+}
+body{
+    color: crimson;
+    margin: auto;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+}
+h1{
+    font-size: 4rem;
+     width: 50rem;
+}
+
+.resultado{
+    font-weight: 700;
+    margin: 15px;
+    color: crimson;
+    font-size: 2.5vw;
+}
+#button-calc{
+ background-color: gray;
+ padding: 5px;
+ border-radius: 15px;
+ transition: all 3s ease;
+ transition: transform 3s ease;
+ transform: scale(1.25);
+}
+#button-calc:hover{
+    animation: colorChangeButton 2.5s infinite;
+    transform: scale(1.5);
+    font-weight: bold;
+    cursor: grab;
+}
